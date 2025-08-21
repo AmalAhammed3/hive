@@ -10,6 +10,7 @@ class TodoHiveExample extends StatefulWidget {
 }
 
 class _TodoHiveExampleState extends State<TodoHiveExample> {
+  late Box box;
   TextEditingController taskController =TextEditingController();
   List<String> todoItemList = [];
 
@@ -42,7 +43,7 @@ class _TodoHiveExampleState extends State<TodoHiveExample> {
         todoItemList.add(taskController.text);
       });
     }
-    savetodoItems();
+    saveTodoItems();
   }
 
   void deletetodoItems(int index){
